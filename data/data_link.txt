@@ -1,3 +1,0 @@
-DATA LINK:
-lulucf:
-"L:\f02_data\drought_indicator"

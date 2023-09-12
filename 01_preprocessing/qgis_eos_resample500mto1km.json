@@ -1,0 +1,439 @@
+[
+    {
+        "PARAMETERS": {
+            "INPUT": "'<base_folder>/drought_indicator/input/EOS/deos_mosaic_reclass_2000_s1_cog.tif'",
+            "SOURCE_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "TARGET_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "RESAMPLING": "7",
+            "NODATA": "-999",
+            "TARGET_RESOLUTION": "1000",
+            "OPTIONS": "'COMPRESS=DEFLATE|PREDICTOR=2|ZLEVEL=9'",
+            "DATA_TYPE": "0",
+            "TARGET_EXTENT": "'943000.000000000,7317000.000000000,941000.000000000,5416000.000000000 [EPSG:4326]'",
+            "TARGET_EXTENT_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "MULTITHREADING": "True",
+            "EXTRA": "''"
+        },
+        "OUTPUTS": {
+            "OUTPUT": "<base_folder>/drought_indicator/input/EOS_1km/deos_mosaic_reclass_2000_s1_cog_1km_max.tif"
+        }
+    },
+    {
+        "PARAMETERS": {
+            "INPUT": "'<base_folder>/drought_indicator/input/EOS/deos_mosaic_reclass_2001_s1_cog.tif'",
+            "SOURCE_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "TARGET_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "RESAMPLING": "7",
+            "NODATA": "-999",
+            "TARGET_RESOLUTION": "1000",
+            "OPTIONS": "''",
+            "DATA_TYPE": "0",
+            "TARGET_EXTENT": "'943000.000000000,7317000.000000000,941000.000000000,5416000.000000000 [EPSG:4326]'",
+            "TARGET_EXTENT_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "MULTITHREADING": "True",
+            "EXTRA": "''"
+        },
+        "OUTPUTS": {
+            "OUTPUT": "<base_folder>/drought_indicator/input/EOS_1km/deos_mosaic_reclass_2001_s1_cog_1km_max.tif"
+        }
+    },
+    {
+        "PARAMETERS": {
+            "INPUT": "'<base_folder>/drought_indicator/input/EOS/deos_mosaic_reclass_2002_s1_cog.tif'",
+            "SOURCE_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "TARGET_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "RESAMPLING": "7",
+            "NODATA": "-999",
+            "TARGET_RESOLUTION": "1000",
+            "OPTIONS": "''",
+            "DATA_TYPE": "0",
+            "TARGET_EXTENT": "'943000.000000000,7317000.000000000,941000.000000000,5416000.000000000 [EPSG:4326]'",
+            "TARGET_EXTENT_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "MULTITHREADING": "True",
+            "EXTRA": "''"
+        },
+        "OUTPUTS": {
+            "OUTPUT": "<base_folder>/drought_indicator/input/EOS_1km/deos_mosaic_reclass_2002_s1_cog_1km_max.tif"
+        }
+    },
+    {
+        "PARAMETERS": {
+            "INPUT": "'<base_folder>/drought_indicator/input/EOS/deos_mosaic_reclass_2003_s1_cog.tif'",
+            "SOURCE_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "TARGET_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "RESAMPLING": "7",
+            "NODATA": "-999",
+            "TARGET_RESOLUTION": "1000",
+            "OPTIONS": "''",
+            "DATA_TYPE": "0",
+            "TARGET_EXTENT": "'943000.000000000,7317000.000000000,941000.000000000,5416000.000000000 [EPSG:4326]'",
+            "TARGET_EXTENT_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "MULTITHREADING": "True",
+            "EXTRA": "''"
+        },
+        "OUTPUTS": {
+            "OUTPUT": "<base_folder>/drought_indicator/input/EOS_1km/deos_mosaic_reclass_2003_s1_cog_1km_max.tif"
+        }
+    },
+    {
+        "PARAMETERS": {
+            "INPUT": "'<base_folder>/drought_indicator/input/EOS/deos_mosaic_reclass_2004_s1_cog.tif'",
+            "SOURCE_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "TARGET_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "RESAMPLING": "7",
+            "NODATA": "-999",
+            "TARGET_RESOLUTION": "1000",
+            "OPTIONS": "''",
+            "DATA_TYPE": "0",
+            "TARGET_EXTENT": "'943000.000000000,7317000.000000000,941000.000000000,5416000.000000000 [EPSG:4326]'",
+            "TARGET_EXTENT_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "MULTITHREADING": "True",
+            "EXTRA": "''"
+        },
+        "OUTPUTS": {
+            "OUTPUT": "<base_folder>/drought_indicator/input/EOS_1km/deos_mosaic_reclass_2004_s1_cog_1km_max.tif"
+        }
+    },
+    {
+        "PARAMETERS": {
+            "INPUT": "'<base_folder>/drought_indicator/input/EOS/deos_mosaic_reclass_2005_s1_cog.tif'",
+            "SOURCE_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "TARGET_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "RESAMPLING": "7",
+            "NODATA": "-999",
+            "TARGET_RESOLUTION": "1000",
+            "OPTIONS": "''",
+            "DATA_TYPE": "0",
+            "TARGET_EXTENT": "'943000.000000000,7317000.000000000,941000.000000000,5416000.000000000 [EPSG:4326]'",
+            "TARGET_EXTENT_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "MULTITHREADING": "True",
+            "EXTRA": "''"
+        },
+        "OUTPUTS": {
+            "OUTPUT": "<base_folder>/drought_indicator/input/EOS_1km/deos_mosaic_reclass_2005_s1_cog_1km_max.tif"
+        }
+    },
+    {
+        "PARAMETERS": {
+            "INPUT": "'<base_folder>/drought_indicator/input/EOS/deos_mosaic_reclass_2006_s1_cog.tif'",
+            "SOURCE_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "TARGET_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "RESAMPLING": "7",
+            "NODATA": "-999",
+            "TARGET_RESOLUTION": "1000",
+            "OPTIONS": "''",
+            "DATA_TYPE": "0",
+            "TARGET_EXTENT": "'943000.000000000,7317000.000000000,941000.000000000,5416000.000000000 [EPSG:4326]'",
+            "TARGET_EXTENT_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "MULTITHREADING": "True",
+            "EXTRA": "''"
+        },
+        "OUTPUTS": {
+            "OUTPUT": "<base_folder>/drought_indicator/input/EOS_1km/deos_mosaic_reclass_2006_s1_cog_1km_max.tif"
+        }
+    },
+    {
+        "PARAMETERS": {
+            "INPUT": "'<base_folder>/drought_indicator/input/EOS/deos_mosaic_reclass_2007_s1_cog.tif'",
+            "SOURCE_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "TARGET_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "RESAMPLING": "7",
+            "NODATA": "-999",
+            "TARGET_RESOLUTION": "1000",
+            "OPTIONS": "''",
+            "DATA_TYPE": "0",
+            "TARGET_EXTENT": "'943000.000000000,7317000.000000000,941000.000000000,5416000.000000000 [EPSG:4326]'",
+            "TARGET_EXTENT_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "MULTITHREADING": "True",
+            "EXTRA": "''"
+        },
+        "OUTPUTS": {
+            "OUTPUT": "<base_folder>/drought_indicator/input/EOS_1km/deos_mosaic_reclass_2007_s1_cog_1km_max.tif"
+        }
+    },
+    {
+        "PARAMETERS": {
+            "INPUT": "'<base_folder>/drought_indicator/input/EOS/deos_mosaic_reclass_2008_s1_cog.tif'",
+            "SOURCE_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "TARGET_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "RESAMPLING": "7",
+            "NODATA": "-999",
+            "TARGET_RESOLUTION": "1000",
+            "OPTIONS": "''",
+            "DATA_TYPE": "0",
+            "TARGET_EXTENT": "'943000.000000000,7317000.000000000,941000.000000000,5416000.000000000 [EPSG:4326]'",
+            "TARGET_EXTENT_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "MULTITHREADING": "True",
+            "EXTRA": "''"
+        },
+        "OUTPUTS": {
+            "OUTPUT": "<base_folder>/drought_indicator/input/EOS_1km/deos_mosaic_reclass_2008_s1_cog_1km_max.tif"
+        }
+    },
+    {
+        "PARAMETERS": {
+            "INPUT": "'<base_folder>/drought_indicator/input/EOS/deos_mosaic_reclass_2009_s1_cog.tif'",
+            "SOURCE_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "TARGET_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "RESAMPLING": "7",
+            "NODATA": "-999",
+            "TARGET_RESOLUTION": "1000",
+            "OPTIONS": "''",
+            "DATA_TYPE": "0",
+            "TARGET_EXTENT": "'943000.000000000,7317000.000000000,941000.000000000,5416000.000000000 [EPSG:4326]'",
+            "TARGET_EXTENT_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "MULTITHREADING": "True",
+            "EXTRA": "''"
+        },
+        "OUTPUTS": {
+            "OUTPUT": "<base_folder>/drought_indicator/input/EOS_1km/deos_mosaic_reclass_2009_s1_cog_1km_max.tif"
+        }
+    },
+    {
+        "PARAMETERS": {
+            "INPUT": "'<base_folder>/drought_indicator/input/EOS/deos_mosaic_reclass_2010_s1_cog.tif'",
+            "SOURCE_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "TARGET_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "RESAMPLING": "7",
+            "NODATA": "-999",
+            "TARGET_RESOLUTION": "1000",
+            "OPTIONS": "''",
+            "DATA_TYPE": "0",
+            "TARGET_EXTENT": "'943000.000000000,7317000.000000000,941000.000000000,5416000.000000000 [EPSG:4326]'",
+            "TARGET_EXTENT_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "MULTITHREADING": "True",
+            "EXTRA": "''"
+        },
+        "OUTPUTS": {
+            "OUTPUT": "<base_folder>/drought_indicator/input/EOS_1km/deos_mosaic_reclass_2010_s1_cog_1km_max.tif"
+        }
+    },
+    {
+        "PARAMETERS": {
+            "INPUT": "'<base_folder>/drought_indicator/input/EOS/deos_mosaic_reclass_2011_s1_cog.tif'",
+            "SOURCE_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "TARGET_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "RESAMPLING": "7",
+            "NODATA": "-999",
+            "TARGET_RESOLUTION": "1000",
+            "OPTIONS": "''",
+            "DATA_TYPE": "0",
+            "TARGET_EXTENT": "'943000.000000000,7317000.000000000,941000.000000000,5416000.000000000 [EPSG:4326]'",
+            "TARGET_EXTENT_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "MULTITHREADING": "True",
+            "EXTRA": "''"
+        },
+        "OUTPUTS": {
+            "OUTPUT": "<base_folder>/drought_indicator/input/EOS_1km/deos_mosaic_reclass_2011_s1_cog_1km_max.tif"
+        }
+    },
+    {
+        "PARAMETERS": {
+            "INPUT": "'<base_folder>/drought_indicator/input/EOS/deos_mosaic_reclass_2012_s1_cog.tif'",
+            "SOURCE_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "TARGET_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "RESAMPLING": "7",
+            "NODATA": "-999",
+            "TARGET_RESOLUTION": "1000",
+            "OPTIONS": "''",
+            "DATA_TYPE": "0",
+            "TARGET_EXTENT": "'943000.000000000,7317000.000000000,941000.000000000,5416000.000000000 [EPSG:4326]'",
+            "TARGET_EXTENT_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "MULTITHREADING": "True",
+            "EXTRA": "''"
+        },
+        "OUTPUTS": {
+            "OUTPUT": "<base_folder>/drought_indicator/input/EOS_1km/deos_mosaic_reclass_2012_s1_cog_1km_max.tif"
+        }
+    },
+    {
+        "PARAMETERS": {
+            "INPUT": "'<base_folder>/drought_indicator/input/EOS/deos_mosaic_reclass_2013_s1_cog.tif'",
+            "SOURCE_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "TARGET_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "RESAMPLING": "7",
+            "NODATA": "-999",
+            "TARGET_RESOLUTION": "1000",
+            "OPTIONS": "''",
+            "DATA_TYPE": "0",
+            "TARGET_EXTENT": "'943000.000000000,7317000.000000000,941000.000000000,5416000.000000000 [EPSG:4326]'",
+            "TARGET_EXTENT_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "MULTITHREADING": "True",
+            "EXTRA": "''"
+        },
+        "OUTPUTS": {
+            "OUTPUT": "<base_folder>/drought_indicator/input/EOS_1km/deos_mosaic_reclass_2013_s1_cog_1km_max.tif"
+        }
+    },
+    {
+        "PARAMETERS": {
+            "INPUT": "'<base_folder>/drought_indicator/input/EOS/deos_mosaic_reclass_2014_s1_cog.tif'",
+            "SOURCE_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "TARGET_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "RESAMPLING": "7",
+            "NODATA": "-999",
+            "TARGET_RESOLUTION": "1000",
+            "OPTIONS": "''",
+            "DATA_TYPE": "0",
+            "TARGET_EXTENT": "'943000.000000000,7317000.000000000,941000.000000000,5416000.000000000 [EPSG:4326]'",
+            "TARGET_EXTENT_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "MULTITHREADING": "True",
+            "EXTRA": "''"
+        },
+        "OUTPUTS": {
+            "OUTPUT": "<base_folder>/drought_indicator/input/EOS_1km/deos_mosaic_reclass_2014_s1_cog_1km_max.tif"
+        }
+    },
+    {
+        "PARAMETERS": {
+            "INPUT": "'<base_folder>/drought_indicator/input/EOS/deos_mosaic_reclass_2015_s1_cog.tif'",
+            "SOURCE_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "TARGET_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "RESAMPLING": "7",
+            "NODATA": "-999",
+            "TARGET_RESOLUTION": "1000",
+            "OPTIONS": "''",
+            "DATA_TYPE": "0",
+            "TARGET_EXTENT": "'943000.000000000,7317000.000000000,941000.000000000,5416000.000000000 [EPSG:4326]'",
+            "TARGET_EXTENT_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "MULTITHREADING": "True",
+            "EXTRA": "''"
+        },
+        "OUTPUTS": {
+            "OUTPUT": "<base_folder>/drought_indicator/input/EOS_1km/deos_mosaic_reclass_2015_s1_cog_1km_max.tif"
+        }
+    },
+    {
+        "PARAMETERS": {
+            "INPUT": "'<base_folder>/drought_indicator/input/EOS/deos_mosaic_reclass_2016_s1_cog.tif'",
+            "SOURCE_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "TARGET_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "RESAMPLING": "7",
+            "NODATA": "-999",
+            "TARGET_RESOLUTION": "1000",
+            "OPTIONS": "''",
+            "DATA_TYPE": "0",
+            "TARGET_EXTENT": "'943000.000000000,7317000.000000000,941000.000000000,5416000.000000000 [EPSG:4326]'",
+            "TARGET_EXTENT_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "MULTITHREADING": "True",
+            "EXTRA": "''"
+        },
+        "OUTPUTS": {
+            "OUTPUT": "<base_folder>/drought_indicator/input/EOS_1km/deos_mosaic_reclass_2016_s1_cog_1km_max.tif"
+        }
+    },
+    {
+        "PARAMETERS": {
+            "INPUT": "'<base_folder>/drought_indicator/input/EOS/deos_mosaic_reclass_2017_s1_cog.tif'",
+            "SOURCE_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "TARGET_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "RESAMPLING": "7",
+            "NODATA": "-999",
+            "TARGET_RESOLUTION": "1000",
+            "OPTIONS": "''",
+            "DATA_TYPE": "0",
+            "TARGET_EXTENT": "'943000.000000000,7317000.000000000,941000.000000000,5416000.000000000 [EPSG:4326]'",
+            "TARGET_EXTENT_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "MULTITHREADING": "True",
+            "EXTRA": "''"
+        },
+        "OUTPUTS": {
+            "OUTPUT": "<base_folder>/drought_indicator/input/EOS_1km/deos_mosaic_reclass_2017_s1_cog_1km_max.tif"
+        }
+    },
+    {
+        "PARAMETERS": {
+            "INPUT": "'<base_folder>/drought_indicator/input/EOS/deos_mosaic_reclass_2018_s1_cog.tif'",
+            "SOURCE_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "TARGET_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "RESAMPLING": "7",
+            "NODATA": "-999",
+            "TARGET_RESOLUTION": "1000",
+            "OPTIONS": "''",
+            "DATA_TYPE": "0",
+            "TARGET_EXTENT": "'943000.000000000,7317000.000000000,941000.000000000,5416000.000000000 [EPSG:4326]'",
+            "TARGET_EXTENT_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "MULTITHREADING": "True",
+            "EXTRA": "''"
+        },
+        "OUTPUTS": {
+            "OUTPUT": "<base_folder>/drought_indicator/input/EOS_1km/deos_mosaic_reclass_2018_s1_cog_1km_max.tif"
+        }
+    },
+    {
+        "PARAMETERS": {
+            "INPUT": "'<base_folder>/drought_indicator/input/EOS/deos_mosaic_reclass_2019_s1_cog.tif'",
+            "SOURCE_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "TARGET_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "RESAMPLING": "7",
+            "NODATA": "-999",
+            "TARGET_RESOLUTION": "1000",
+            "OPTIONS": "''",
+            "DATA_TYPE": "0",
+            "TARGET_EXTENT": "'943000.000000000,7317000.000000000,941000.000000000,5416000.000000000 [EPSG:4326]'",
+            "TARGET_EXTENT_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "MULTITHREADING": "True",
+            "EXTRA": "''"
+        },
+        "OUTPUTS": {
+            "OUTPUT": "<base_folder>/drought_indicator/input/EOS_1km/deos_mosaic_reclass_2019_s1_cog_1km_max.tif"
+        }
+    },
+    {
+        "PARAMETERS": {
+            "INPUT": "'<base_folder>/drought_indicator/input/EOS/deos_mosaic_reclass_2020_s1_cog.tif'",
+            "SOURCE_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "TARGET_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "RESAMPLING": "7",
+            "NODATA": "-999",
+            "TARGET_RESOLUTION": "1000",
+            "OPTIONS": "''",
+            "DATA_TYPE": "0",
+            "TARGET_EXTENT": "'943000.000000000,7317000.000000000,941000.000000000,5416000.000000000 [EPSG:4326]'",
+            "TARGET_EXTENT_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "MULTITHREADING": "True",
+            "EXTRA": "''"
+        },
+        "OUTPUTS": {
+            "OUTPUT": "<base_folder>/drought_indicator/input/EOS_1km/deos_mosaic_reclass_2020_s1_cog_1km_max.tif"
+        }
+    },
+    {
+        "PARAMETERS": {
+            "INPUT": "'<base_folder>/drought_indicator/input/EOS/deos_mosaic_reclass_2021_s1_cog.tif'",
+            "SOURCE_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "TARGET_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "RESAMPLING": "7",
+            "NODATA": "-999",
+            "TARGET_RESOLUTION": "1000",
+            "OPTIONS": "''",
+            "DATA_TYPE": "0",
+            "TARGET_EXTENT": "'943000.000000000,7317000.000000000,941000.000000000,5416000.000000000 [EPSG:4326]'",
+            "TARGET_EXTENT_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "MULTITHREADING": "True",
+            "EXTRA": "''"
+        },
+        "OUTPUTS": {
+            "OUTPUT": "<base_folder>/drought_indicator/input/EOS_1km/deos_mosaic_reclass_2021_s1_cog_1km_max.tif"
+        }
+    },
+    {
+        "PARAMETERS": {
+            "INPUT": "'<base_folder>/drought_indicator/input/EOS/deos_mosaic_reclass_2022_s1_cog.tif'",
+            "SOURCE_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "TARGET_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "RESAMPLING": "7",
+            "NODATA": "-999",
+            "TARGET_RESOLUTION": "1000",
+            "OPTIONS": "''",
+            "DATA_TYPE": "0",
+            "TARGET_EXTENT": "'943000.000000000,7317000.000000000,941000.000000000,5416000.000000000 [EPSG:4326]'",
+            "TARGET_EXTENT_CRS": "QgsCoordinateReferenceSystem('EPSG:3035')",
+            "MULTITHREADING": "True",
+            "EXTRA": "''"
+        },
+        "OUTPUTS": {
+            "OUTPUT": "<base_folder>/drought_indicator/input/EOS_1km/deos_mosaic_reclass_2022_s1_cog_1km_max.tif"
+        }
+    }
+]
