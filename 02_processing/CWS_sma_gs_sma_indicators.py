@@ -10,6 +10,8 @@ from datetime import datetime
 import matplotlib.pyplot as plt
 import calendar
 import itertools
+from datetime import datetime
+from loguru import logger
 
 
 # Calculate growing-season masked SMA
@@ -20,6 +22,7 @@ import itertools
 # 4) Save dekadal, growing-season masked SMA files (from earliest SOS date to latest EOS date in study region)
 # 5) Derive and save drought indicators
 
+@logger.catch
 def resample_sm(sma_in, src_y, src_x, target_y, target_x, k=1):
     """ Resample SMA from source grid (5 km) to target grid (1 km) using bivariate spline
     """
@@ -34,7 +37,7 @@ def resample_sm(sma_in, src_y, src_x, target_y, target_x, k=1):
 
     return sma_out
 
-
+@logger.catch
 def calc_sma_gs_indicators(aoi_name, aoi_coords, year, base_path):
     """ Input:
     - 5 km SM anomalies (calculate in CWS_calc_sm_zscore.py)
@@ -74,11 +77,13 @@ def calc_sma_gs_indicators(aoi_name, aoi_coords, year, base_path):
     if not os.path.exists(out_path):
         os.mkdir(out_path)
 
+    logger.info("loading eu mask")
     # read shp to mask output files
     shp_path = Path(r"L:\f02_data\ref_data\terrestrial_europe_mask")
     shp_aoi = gpd.read_file(os.path.join(shp_path, "admin_mask_europe.shp"))
 
     ################################################## SOS & EOS #######################################################
+    logger.info("Preparing EOS and SOS")
     # note: SOS ranges from <0 to +365 (previous year + current year)
     # load SOS dates of desired year into xarray
     tif_list = [f for f in os.listdir(sos_path) if str(year) in f]
@@ -112,6 +117,8 @@ def calc_sma_gs_indicators(aoi_name, aoi_coords, year, base_path):
     eos_ds = xr.where(eos_ds['dEOS'].isnull(), 0, eos_ds).astype(int)
 
     ######################################### SM in growing season (2001 onwards) ######################################
+    logger.info("Start SMA processing: clip to growing season and clip to -3,3")
+    logger.info(f"Processing year {year}")
     if year != 2000:
         # load soil moisture anomalies into xarray (previous and current year)
         sma5k_year = xr.open_dataset(os.path.join(sma_path, f'SMI_anom_{year}.tif'), engine='rasterio').sel(y=slice(ymax, ymin), x=slice(xmin, xmax))
@@ -130,6 +137,7 @@ def calc_sma_gs_indicators(aoi_name, aoi_coords, year, base_path):
         ds_time = [datetime(y, m, d) for y, m, d in list(itertools.product([year-1, year], range(1, 13), [1, 11, 21]))]
 
 
+        logger.info("Resampling 5km to 1km")
         # resample SMA from 5km to 1km using nearest neighbor (in xarray) ----------------------------------------------
         sma1km = sma5k.interp(x=target_x, y=target_y, method="nearest")
         sma_ds = xr.Dataset(
@@ -207,6 +215,7 @@ def calc_sma_gs_indicators(aoi_name, aoi_coords, year, base_path):
 
         # resample and interpolate each timestamp
 
+        logger.info("Resampling 5km to 1km")
         sma1km = sma5k.interp(x=target_x, y=target_y, method="nearest")
 
         sma1km = np.empty((len(ds_time), len(target_y), len(target_x)))
@@ -262,6 +271,7 @@ def calc_sma_gs_indicators(aoi_name, aoi_coords, year, base_path):
     sma_gs.rio.write_crs("epsg:3035", inplace=True)
     sma_gs.rio.set_spatial_dims(x_dim="x", y_dim="y", inplace=True)
 
+    logger.info("saving dekads data")
     ##################### subset SMA_GS to year of interest and save dekadal SMA in yearly folders #####################
     sma_gs_yearly = sma_gs.loc[dict(time=sma_gs.time.dt.year == year)]
     sma_gs_yearly = sma_gs_yearly.fillna(-999)
@@ -286,6 +296,7 @@ def calc_sma_gs_indicators(aoi_name, aoi_coords, year, base_path):
     del sma_gs_dt, sma_gs_yearly
 
     ######################################## calculate and save mean annual SMA ########################################
+    logger.info("saving avg annual data")
     annual_sma_gs = xr.where(sma_gs > -4, sma_gs, np.nan).mean("time")
     gs_mask = gs_mask.isel(time=0).drop("time")
     annual_sma_gs = xr.where(gs_mask == 0, annual_sma_gs["sma"], np.nan)
@@ -304,6 +315,7 @@ def calc_sma_gs_indicators(aoi_name, aoi_coords, year, base_path):
     ## from here on: indicator calculation -----------------------------------------------------------------------------
     sma_gs = sma_gs.sel(x=slice(xmin, xmax), y=slice(ymax, ymin))
 
+    logger.info("indicator calculation")
     # ANNUAL DROUGHT PRESSURE MASK -------------------------------------------------------------------------------------
     sma_ann = sma_gs.mean(dim='time')  # annual seasonally averaged SMA
     ann_drought_pressure = xr.where(sma_ann < -1, sma_ann, np.nan)
@@ -351,18 +363,14 @@ def calc_sma_gs_indicators(aoi_name, aoi_coords, year, base_path):
 
 
 if __name__ == "__main__":
+    # add log file
+    logger.add("99_logfiles\logfile_SMA.log")
 
-    """
-    base_path = Path(r'C:\Users\Zappa\Documents\ETC_DI\drought_indicator')
-    # bounding box coordinates given in (xmin, ymin, xmax, ymax)
-    aoi_coords = dict(Iberia=(2630000, 1580000, 3770000, 2460000),
-                      CentEur=(4500000, 2600000, 5000000, 3100000),
-                      CentEur2=(5000000, 2300000, 6000000, 3100000))
-    """
-
+    base1 = 2000
+    base2 = 2022
     base_path = Path(r'L:\f02_data\drought_indicator')
     aoi_coords = dict(EU=(2500000, 750000, 7500000, 5500000))
 
     for aoi_name,aoi_bbox in aoi_coords.items():
-        for year in range(2003, 2004):
+        for year in range(base1, base2):
             calc_sma_gs_indicators(aoi_name=aoi_name, aoi_coords=aoi_bbox, year=year, base_path=base_path)

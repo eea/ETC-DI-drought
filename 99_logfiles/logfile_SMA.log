@@ -1,0 +1,176 @@
+2023-09-12 16:21:49.629 | INFO     | __main__:calc_sma_gs_indicators:80 - loading eu mask
+2023-09-12 16:21:51.981 | INFO     | __main__:calc_sma_gs_indicators:86 - Preparing EOS and SOS
+2023-09-12 16:21:54.208 | INFO     | __main__:calc_sma_gs_indicators:120 - Start SMA processing: clip to growing season and clip to -3,3
+2023-09-12 16:21:54.209 | INFO     | __main__:calc_sma_gs_indicators:121 - Processing year 2000
+2023-09-12 16:21:55.776 | INFO     | __main__:calc_sma_gs_indicators:218 - Resampling 5km to 1km
+2023-09-12 16:22:32.535 | INFO     | __main__:calc_sma_gs_indicators:274 - saving dekads data
+2023-09-12 16:31:43.715 | INFO     | __main__:calc_sma_gs_indicators:299 - saving avg annual data
+2023-09-12 16:32:13.367 | INFO     | __main__:calc_sma_gs_indicators:318 - indicator calculation
+2023-09-12 16:33:23.842 | INFO     | __main__:calc_sma_gs_indicators:80 - loading eu mask
+2023-09-12 16:33:26.607 | INFO     | __main__:calc_sma_gs_indicators:86 - Preparing EOS and SOS
+2023-09-12 16:33:28.972 | INFO     | __main__:calc_sma_gs_indicators:120 - Start SMA processing: clip to growing season and clip to -3,3
+2023-09-12 16:33:28.973 | INFO     | __main__:calc_sma_gs_indicators:121 - Processing year 2001
+2023-09-12 16:33:32.229 | INFO     | __main__:calc_sma_gs_indicators:140 - Resampling 5km to 1km
+2023-09-12 16:34:14.496 | INFO     | __main__:calc_sma_gs_indicators:274 - saving dekads data
+2023-09-12 16:44:14.453 | INFO     | __main__:calc_sma_gs_indicators:299 - saving avg annual data
+2023-09-12 16:44:44.873 | INFO     | __main__:calc_sma_gs_indicators:318 - indicator calculation
+2023-09-12 16:46:04.718 | INFO     | __main__:calc_sma_gs_indicators:80 - loading eu mask
+2023-09-12 16:46:07.041 | INFO     | __main__:calc_sma_gs_indicators:86 - Preparing EOS and SOS
+2023-09-12 16:46:09.343 | INFO     | __main__:calc_sma_gs_indicators:120 - Start SMA processing: clip to growing season and clip to -3,3
+2023-09-12 16:46:09.345 | INFO     | __main__:calc_sma_gs_indicators:121 - Processing year 2002
+2023-09-12 16:46:12.842 | INFO     | __main__:calc_sma_gs_indicators:140 - Resampling 5km to 1km
+2023-09-12 16:46:52.013 | INFO     | __main__:calc_sma_gs_indicators:274 - saving dekads data
+2023-09-12 16:56:33.612 | INFO     | __main__:calc_sma_gs_indicators:299 - saving avg annual data
+2023-09-12 16:57:03.079 | INFO     | __main__:calc_sma_gs_indicators:318 - indicator calculation
+2023-09-12 16:58:19.596 | INFO     | __main__:calc_sma_gs_indicators:80 - loading eu mask
+2023-09-12 16:58:22.033 | INFO     | __main__:calc_sma_gs_indicators:86 - Preparing EOS and SOS
+2023-09-12 16:58:24.254 | INFO     | __main__:calc_sma_gs_indicators:120 - Start SMA processing: clip to growing season and clip to -3,3
+2023-09-12 16:58:24.256 | INFO     | __main__:calc_sma_gs_indicators:121 - Processing year 2003
+2023-09-12 16:58:27.442 | INFO     | __main__:calc_sma_gs_indicators:140 - Resampling 5km to 1km
+2023-09-12 16:59:07.785 | INFO     | __main__:calc_sma_gs_indicators:274 - saving dekads data
+2023-09-12 17:08:20.057 | INFO     | __main__:calc_sma_gs_indicators:299 - saving avg annual data
+2023-09-12 17:08:51.275 | INFO     | __main__:calc_sma_gs_indicators:318 - indicator calculation
+2023-09-12 17:10:08.607 | INFO     | __main__:calc_sma_gs_indicators:80 - loading eu mask
+2023-09-12 17:10:10.845 | INFO     | __main__:calc_sma_gs_indicators:86 - Preparing EOS and SOS
+2023-09-12 17:10:12.996 | INFO     | __main__:calc_sma_gs_indicators:120 - Start SMA processing: clip to growing season and clip to -3,3
+2023-09-12 17:10:12.998 | INFO     | __main__:calc_sma_gs_indicators:121 - Processing year 2004
+2023-09-12 17:10:16.065 | INFO     | __main__:calc_sma_gs_indicators:140 - Resampling 5km to 1km
+2023-09-12 17:10:54.299 | INFO     | __main__:calc_sma_gs_indicators:274 - saving dekads data
+2023-09-12 17:19:41.205 | INFO     | __main__:calc_sma_gs_indicators:299 - saving avg annual data
+2023-09-12 17:20:09.383 | INFO     | __main__:calc_sma_gs_indicators:318 - indicator calculation
+2023-09-12 17:21:16.405 | INFO     | __main__:calc_sma_gs_indicators:80 - loading eu mask
+2023-09-12 17:21:18.683 | INFO     | __main__:calc_sma_gs_indicators:86 - Preparing EOS and SOS
+2023-09-12 17:21:20.875 | INFO     | __main__:calc_sma_gs_indicators:120 - Start SMA processing: clip to growing season and clip to -3,3
+2023-09-12 17:21:20.877 | INFO     | __main__:calc_sma_gs_indicators:121 - Processing year 2005
+2023-09-12 17:21:23.871 | INFO     | __main__:calc_sma_gs_indicators:140 - Resampling 5km to 1km
+2023-09-12 17:22:01.327 | INFO     | __main__:calc_sma_gs_indicators:274 - saving dekads data
+2023-09-12 17:30:44.076 | INFO     | __main__:calc_sma_gs_indicators:299 - saving avg annual data
+2023-09-12 17:31:13.590 | INFO     | __main__:calc_sma_gs_indicators:318 - indicator calculation
+2023-09-12 17:32:27.964 | INFO     | __main__:calc_sma_gs_indicators:80 - loading eu mask
+2023-09-12 17:32:30.440 | INFO     | __main__:calc_sma_gs_indicators:86 - Preparing EOS and SOS
+2023-09-12 17:32:32.601 | INFO     | __main__:calc_sma_gs_indicators:120 - Start SMA processing: clip to growing season and clip to -3,3
+2023-09-12 17:32:32.603 | INFO     | __main__:calc_sma_gs_indicators:121 - Processing year 2006
+2023-09-12 17:32:35.692 | INFO     | __main__:calc_sma_gs_indicators:140 - Resampling 5km to 1km
+2023-09-12 17:33:13.336 | INFO     | __main__:calc_sma_gs_indicators:274 - saving dekads data
+2023-09-12 17:41:54.198 | INFO     | __main__:calc_sma_gs_indicators:299 - saving avg annual data
+2023-09-12 17:42:22.805 | INFO     | __main__:calc_sma_gs_indicators:318 - indicator calculation
+2023-09-12 17:43:33.676 | INFO     | __main__:calc_sma_gs_indicators:80 - loading eu mask
+2023-09-12 17:43:35.894 | INFO     | __main__:calc_sma_gs_indicators:86 - Preparing EOS and SOS
+2023-09-12 17:43:38.053 | INFO     | __main__:calc_sma_gs_indicators:120 - Start SMA processing: clip to growing season and clip to -3,3
+2023-09-12 17:43:38.054 | INFO     | __main__:calc_sma_gs_indicators:121 - Processing year 2007
+2023-09-12 17:43:41.096 | INFO     | __main__:calc_sma_gs_indicators:140 - Resampling 5km to 1km
+2023-09-12 17:44:18.157 | INFO     | __main__:calc_sma_gs_indicators:274 - saving dekads data
+2023-09-12 17:53:06.586 | INFO     | __main__:calc_sma_gs_indicators:299 - saving avg annual data
+2023-09-12 17:53:35.501 | INFO     | __main__:calc_sma_gs_indicators:318 - indicator calculation
+2023-09-12 17:54:42.148 | INFO     | __main__:calc_sma_gs_indicators:80 - loading eu mask
+2023-09-12 17:54:44.341 | INFO     | __main__:calc_sma_gs_indicators:86 - Preparing EOS and SOS
+2023-09-12 17:54:46.493 | INFO     | __main__:calc_sma_gs_indicators:120 - Start SMA processing: clip to growing season and clip to -3,3
+2023-09-12 17:54:46.495 | INFO     | __main__:calc_sma_gs_indicators:121 - Processing year 2008
+2023-09-12 17:54:49.542 | INFO     | __main__:calc_sma_gs_indicators:140 - Resampling 5km to 1km
+2023-09-12 17:55:27.280 | INFO     | __main__:calc_sma_gs_indicators:274 - saving dekads data
+2023-09-12 18:04:25.044 | INFO     | __main__:calc_sma_gs_indicators:299 - saving avg annual data
+2023-09-12 18:04:53.338 | INFO     | __main__:calc_sma_gs_indicators:318 - indicator calculation
+2023-09-12 18:06:04.905 | INFO     | __main__:calc_sma_gs_indicators:80 - loading eu mask
+2023-09-12 18:06:07.200 | INFO     | __main__:calc_sma_gs_indicators:86 - Preparing EOS and SOS
+2023-09-12 18:06:09.401 | INFO     | __main__:calc_sma_gs_indicators:120 - Start SMA processing: clip to growing season and clip to -3,3
+2023-09-12 18:06:09.402 | INFO     | __main__:calc_sma_gs_indicators:121 - Processing year 2009
+2023-09-12 18:06:12.400 | INFO     | __main__:calc_sma_gs_indicators:140 - Resampling 5km to 1km
+2023-09-12 18:06:50.438 | INFO     | __main__:calc_sma_gs_indicators:274 - saving dekads data
+2023-09-12 18:15:27.587 | INFO     | __main__:calc_sma_gs_indicators:299 - saving avg annual data
+2023-09-12 18:15:56.231 | INFO     | __main__:calc_sma_gs_indicators:318 - indicator calculation
+2023-09-12 18:17:07.089 | INFO     | __main__:calc_sma_gs_indicators:80 - loading eu mask
+2023-09-12 18:17:09.260 | INFO     | __main__:calc_sma_gs_indicators:86 - Preparing EOS and SOS
+2023-09-12 18:17:11.573 | INFO     | __main__:calc_sma_gs_indicators:120 - Start SMA processing: clip to growing season and clip to -3,3
+2023-09-12 18:17:11.575 | INFO     | __main__:calc_sma_gs_indicators:121 - Processing year 2010
+2023-09-12 18:17:14.596 | INFO     | __main__:calc_sma_gs_indicators:140 - Resampling 5km to 1km
+2023-09-12 18:17:53.378 | INFO     | __main__:calc_sma_gs_indicators:274 - saving dekads data
+2023-09-12 18:26:41.680 | INFO     | __main__:calc_sma_gs_indicators:299 - saving avg annual data
+2023-09-12 18:27:09.663 | INFO     | __main__:calc_sma_gs_indicators:318 - indicator calculation
+2023-09-12 18:28:20.011 | INFO     | __main__:calc_sma_gs_indicators:80 - loading eu mask
+2023-09-12 18:28:22.494 | INFO     | __main__:calc_sma_gs_indicators:86 - Preparing EOS and SOS
+2023-09-12 18:28:24.791 | INFO     | __main__:calc_sma_gs_indicators:120 - Start SMA processing: clip to growing season and clip to -3,3
+2023-09-12 18:28:24.793 | INFO     | __main__:calc_sma_gs_indicators:121 - Processing year 2011
+2023-09-12 18:28:27.818 | INFO     | __main__:calc_sma_gs_indicators:140 - Resampling 5km to 1km
+2023-09-12 18:29:06.324 | INFO     | __main__:calc_sma_gs_indicators:274 - saving dekads data
+2023-09-12 18:38:01.383 | INFO     | __main__:calc_sma_gs_indicators:299 - saving avg annual data
+2023-09-12 18:38:30.117 | INFO     | __main__:calc_sma_gs_indicators:318 - indicator calculation
+2023-09-12 18:39:42.743 | INFO     | __main__:calc_sma_gs_indicators:80 - loading eu mask
+2023-09-12 18:39:44.998 | INFO     | __main__:calc_sma_gs_indicators:86 - Preparing EOS and SOS
+2023-09-12 18:39:47.209 | INFO     | __main__:calc_sma_gs_indicators:120 - Start SMA processing: clip to growing season and clip to -3,3
+2023-09-12 18:39:47.210 | INFO     | __main__:calc_sma_gs_indicators:121 - Processing year 2012
+2023-09-12 18:39:50.204 | INFO     | __main__:calc_sma_gs_indicators:140 - Resampling 5km to 1km
+2023-09-12 18:40:27.718 | INFO     | __main__:calc_sma_gs_indicators:274 - saving dekads data
+2023-09-12 18:49:16.828 | INFO     | __main__:calc_sma_gs_indicators:299 - saving avg annual data
+2023-09-12 18:49:45.840 | INFO     | __main__:calc_sma_gs_indicators:318 - indicator calculation
+2023-09-12 18:50:58.881 | INFO     | __main__:calc_sma_gs_indicators:80 - loading eu mask
+2023-09-12 18:51:01.194 | INFO     | __main__:calc_sma_gs_indicators:86 - Preparing EOS and SOS
+2023-09-12 18:51:03.609 | INFO     | __main__:calc_sma_gs_indicators:120 - Start SMA processing: clip to growing season and clip to -3,3
+2023-09-12 18:51:03.611 | INFO     | __main__:calc_sma_gs_indicators:121 - Processing year 2013
+2023-09-12 18:51:06.643 | INFO     | __main__:calc_sma_gs_indicators:140 - Resampling 5km to 1km
+2023-09-12 18:51:45.439 | INFO     | __main__:calc_sma_gs_indicators:274 - saving dekads data
+2023-09-12 19:00:14.018 | INFO     | __main__:calc_sma_gs_indicators:299 - saving avg annual data
+2023-09-12 19:00:42.371 | INFO     | __main__:calc_sma_gs_indicators:318 - indicator calculation
+2023-09-12 19:01:51.961 | INFO     | __main__:calc_sma_gs_indicators:80 - loading eu mask
+2023-09-12 19:01:54.389 | INFO     | __main__:calc_sma_gs_indicators:86 - Preparing EOS and SOS
+2023-09-12 19:01:56.565 | INFO     | __main__:calc_sma_gs_indicators:120 - Start SMA processing: clip to growing season and clip to -3,3
+2023-09-12 19:01:56.567 | INFO     | __main__:calc_sma_gs_indicators:121 - Processing year 2014
+2023-09-12 19:01:59.562 | INFO     | __main__:calc_sma_gs_indicators:140 - Resampling 5km to 1km
+2023-09-12 19:02:38.329 | INFO     | __main__:calc_sma_gs_indicators:274 - saving dekads data
+2023-09-12 19:11:29.430 | INFO     | __main__:calc_sma_gs_indicators:299 - saving avg annual data
+2023-09-12 19:11:57.763 | INFO     | __main__:calc_sma_gs_indicators:318 - indicator calculation
+2023-09-12 19:13:08.568 | INFO     | __main__:calc_sma_gs_indicators:80 - loading eu mask
+2023-09-12 19:13:10.900 | INFO     | __main__:calc_sma_gs_indicators:86 - Preparing EOS and SOS
+2023-09-12 19:13:13.138 | INFO     | __main__:calc_sma_gs_indicators:120 - Start SMA processing: clip to growing season and clip to -3,3
+2023-09-12 19:13:13.140 | INFO     | __main__:calc_sma_gs_indicators:121 - Processing year 2015
+2023-09-12 19:13:16.160 | INFO     | __main__:calc_sma_gs_indicators:140 - Resampling 5km to 1km
+2023-09-12 19:13:53.721 | INFO     | __main__:calc_sma_gs_indicators:274 - saving dekads data
+2023-09-12 19:23:04.195 | INFO     | __main__:calc_sma_gs_indicators:299 - saving avg annual data
+2023-09-12 19:23:33.301 | INFO     | __main__:calc_sma_gs_indicators:318 - indicator calculation
+2023-09-12 19:24:45.990 | INFO     | __main__:calc_sma_gs_indicators:80 - loading eu mask
+2023-09-12 19:24:48.235 | INFO     | __main__:calc_sma_gs_indicators:86 - Preparing EOS and SOS
+2023-09-12 19:24:50.541 | INFO     | __main__:calc_sma_gs_indicators:120 - Start SMA processing: clip to growing season and clip to -3,3
+2023-09-12 19:24:50.543 | INFO     | __main__:calc_sma_gs_indicators:121 - Processing year 2016
+2023-09-12 19:24:53.551 | INFO     | __main__:calc_sma_gs_indicators:140 - Resampling 5km to 1km
+2023-09-12 19:25:31.376 | INFO     | __main__:calc_sma_gs_indicators:274 - saving dekads data
+2023-09-12 19:34:00.085 | INFO     | __main__:calc_sma_gs_indicators:299 - saving avg annual data
+2023-09-12 19:34:27.868 | INFO     | __main__:calc_sma_gs_indicators:318 - indicator calculation
+2023-09-12 19:35:37.518 | INFO     | __main__:calc_sma_gs_indicators:80 - loading eu mask
+2023-09-12 19:35:39.876 | INFO     | __main__:calc_sma_gs_indicators:86 - Preparing EOS and SOS
+2023-09-12 19:35:42.119 | INFO     | __main__:calc_sma_gs_indicators:120 - Start SMA processing: clip to growing season and clip to -3,3
+2023-09-12 19:35:42.121 | INFO     | __main__:calc_sma_gs_indicators:121 - Processing year 2017
+2023-09-12 19:35:45.118 | INFO     | __main__:calc_sma_gs_indicators:140 - Resampling 5km to 1km
+2023-09-12 19:36:22.720 | INFO     | __main__:calc_sma_gs_indicators:274 - saving dekads data
+2023-09-12 19:45:17.911 | INFO     | __main__:calc_sma_gs_indicators:299 - saving avg annual data
+2023-09-12 19:45:46.467 | INFO     | __main__:calc_sma_gs_indicators:318 - indicator calculation
+2023-09-12 19:46:56.337 | INFO     | __main__:calc_sma_gs_indicators:80 - loading eu mask
+2023-09-12 19:46:58.601 | INFO     | __main__:calc_sma_gs_indicators:86 - Preparing EOS and SOS
+2023-09-12 19:47:00.852 | INFO     | __main__:calc_sma_gs_indicators:120 - Start SMA processing: clip to growing season and clip to -3,3
+2023-09-12 19:47:00.854 | INFO     | __main__:calc_sma_gs_indicators:121 - Processing year 2018
+2023-09-12 19:47:03.912 | INFO     | __main__:calc_sma_gs_indicators:140 - Resampling 5km to 1km
+2023-09-12 19:47:41.172 | INFO     | __main__:calc_sma_gs_indicators:274 - saving dekads data
+2023-09-12 19:56:47.112 | INFO     | __main__:calc_sma_gs_indicators:299 - saving avg annual data
+2023-09-12 19:57:14.985 | INFO     | __main__:calc_sma_gs_indicators:318 - indicator calculation
+2023-09-12 19:58:22.391 | INFO     | __main__:calc_sma_gs_indicators:80 - loading eu mask
+2023-09-12 19:58:24.639 | INFO     | __main__:calc_sma_gs_indicators:86 - Preparing EOS and SOS
+2023-09-12 19:58:26.832 | INFO     | __main__:calc_sma_gs_indicators:120 - Start SMA processing: clip to growing season and clip to -3,3
+2023-09-12 19:58:26.834 | INFO     | __main__:calc_sma_gs_indicators:121 - Processing year 2019
+2023-09-12 19:58:29.976 | INFO     | __main__:calc_sma_gs_indicators:140 - Resampling 5km to 1km
+2023-09-12 19:59:08.431 | INFO     | __main__:calc_sma_gs_indicators:274 - saving dekads data
+2023-09-12 20:08:16.744 | INFO     | __main__:calc_sma_gs_indicators:299 - saving avg annual data
+2023-09-12 20:08:45.742 | INFO     | __main__:calc_sma_gs_indicators:318 - indicator calculation
+2023-09-12 20:09:59.214 | INFO     | __main__:calc_sma_gs_indicators:80 - loading eu mask
+2023-09-12 20:10:01.565 | INFO     | __main__:calc_sma_gs_indicators:86 - Preparing EOS and SOS
+2023-09-12 20:10:03.790 | INFO     | __main__:calc_sma_gs_indicators:120 - Start SMA processing: clip to growing season and clip to -3,3
+2023-09-12 20:10:03.792 | INFO     | __main__:calc_sma_gs_indicators:121 - Processing year 2020
+2023-09-12 20:10:06.857 | INFO     | __main__:calc_sma_gs_indicators:140 - Resampling 5km to 1km
+2023-09-12 20:10:45.579 | INFO     | __main__:calc_sma_gs_indicators:274 - saving dekads data
+2023-09-12 20:19:14.932 | INFO     | __main__:calc_sma_gs_indicators:299 - saving avg annual data
+2023-09-12 20:19:43.085 | INFO     | __main__:calc_sma_gs_indicators:318 - indicator calculation
+2023-09-12 20:20:51.887 | INFO     | __main__:calc_sma_gs_indicators:80 - loading eu mask
+2023-09-12 20:20:54.144 | INFO     | __main__:calc_sma_gs_indicators:86 - Preparing EOS and SOS
+2023-09-12 20:20:56.314 | INFO     | __main__:calc_sma_gs_indicators:120 - Start SMA processing: clip to growing season and clip to -3,3
+2023-09-12 20:20:56.316 | INFO     | __main__:calc_sma_gs_indicators:121 - Processing year 2021
+2023-09-12 20:20:59.337 | INFO     | __main__:calc_sma_gs_indicators:140 - Resampling 5km to 1km
+2023-09-12 20:21:37.818 | INFO     | __main__:calc_sma_gs_indicators:274 - saving dekads data
+2023-09-12 20:30:37.318 | INFO     | __main__:calc_sma_gs_indicators:299 - saving avg annual data
+2023-09-12 20:31:06.115 | INFO     | __main__:calc_sma_gs_indicators:318 - indicator calculation
