@@ -5,7 +5,7 @@ import rioxarray as rio
 import pandas as pd
 import numpy as np
 import geopandas as gpd
-from scipy.interpolate import RectBivariateSpline, NearestNDInterpolator, RegularGridInterpolator
+from scipy.interpolate import RectBivariateSpline
 from datetime import datetime
 import matplotlib.pyplot as plt
 import calendar
@@ -61,6 +61,7 @@ def calc_sma_gs_indicators(aoi_name, aoi_coords, year, base_path):
     """
     # AOI: subset of Europe, e.g. Iberian peninsula (in order to get everything into memory)
     # (adding 1x spacing to make sure SMA covers entire AOI)
+    logger.info(f"Processing year {year}")
     spacing = 0
     xmin = aoi_coords[0] - spacing
     ymin = aoi_coords[1] - spacing
@@ -118,7 +119,6 @@ def calc_sma_gs_indicators(aoi_name, aoi_coords, year, base_path):
 
     ######################################### SM in growing season (2001 onwards) ######################################
     logger.info("Start SMA processing: clip to growing season and clip to -3,3")
-    logger.info(f"Processing year {year}")
     if year != 2000:
         # load soil moisture anomalies into xarray (previous and current year)
         sma5k_year = xr.open_dataset(os.path.join(sma_path, f'SMI_anom_{year}.tif'), engine='rasterio').sel(y=slice(ymax, ymin), x=slice(xmin, xmax))
@@ -149,24 +149,6 @@ def calc_sma_gs_indicators(aoi_name, aoi_coords, year, base_path):
                             ),
                             attrs=dict(description="JRC SMA resampled to 1km grid using nearest neighbor interpolation."),
                         )
-
-        """# resample and interpolate each timestamp
-        sma1km = np.empty((len(ds_time), len(target_y), len(target_x)))
-        for tsi in range(len(ds_time)):
-            sma_tsi = resample_sm(sma5k.isel(band=tsi)[sm_var].values, src_y, src_x, target_y, target_x)
-            sma1km[tsi] = sma_tsi
-        # store in new xarray dataset
-        del sma5k, sma_tsi
-        sma_ds = xr.Dataset(
-                            data_vars=dict(sma=(['time', 'y', 'x'], sma1km)),
-                            coords=dict(
-                                time=ds_time,
-                                y=target_y,
-                                x=target_x,
-                            ),
-                            attrs=dict(description="JRC SMA resampled to 1km grid using nearest neighbor interpolation."),
-                        )
-        """
 
         # apply GS masking on SM
         # look-up table for DOY and dekads
@@ -216,23 +198,17 @@ def calc_sma_gs_indicators(aoi_name, aoi_coords, year, base_path):
         # resample and interpolate each timestamp
 
         logger.info("Resampling 5km to 1km")
+               # resample SMA from 5km to 1km using nearest neighbor (in xarray) ----------------------------------------------
         sma1km = sma5k.interp(x=target_x, y=target_y, method="nearest")
-
-        sma1km = np.empty((len(ds_time), len(target_y), len(target_x)))
-        for tsi in range(len(ds_time)):
-            sma_tsi = resample_sm(sma5k.isel(band=tsi)['sma'].values, src_y, src_x, target_y, target_x)
-            sma1km[tsi] = sma_tsi
-        # store in new xarray dataset
-        del sma5k, sma_tsi
         sma_ds = xr.Dataset(
-            data_vars=dict(sma=(['time', 'y', 'x'], sma1km)),
-            coords=dict(
-                time=ds_time,
-                y=target_y,
-                x=target_x,
-            ),
-            attrs=dict(description="JRC SMA resampled to 1km grid using nearest neighbor interpolation."),
-        )
+                            data_vars=dict(sma=(['time', 'y', 'x'], sma1km["sma"].values)),
+                            coords=dict(
+                                time=ds_time,
+                                y=target_y,
+                                x=target_x,
+                            ),
+                            attrs=dict(description="JRC SMA resampled to 1km grid using nearest neighbor interpolation."),
+                        )
 
         # apply GS masking on SM
         # look-up table for DOY and dekads
@@ -372,5 +348,5 @@ if __name__ == "__main__":
     aoi_coords = dict(EU=(2500000, 750000, 7500000, 5500000))
 
     for aoi_name,aoi_bbox in aoi_coords.items():
-        for year in range(base1, base2):
+        for year in range(base1, base2+1):
             calc_sma_gs_indicators(aoi_name=aoi_name, aoi_coords=aoi_bbox, year=year, base_path=base_path)
