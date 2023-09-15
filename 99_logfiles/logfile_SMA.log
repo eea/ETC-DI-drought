@@ -174,3 +174,83 @@
 2023-09-12 20:21:37.818 | INFO     | __main__:calc_sma_gs_indicators:274 - saving dekads data
 2023-09-12 20:30:37.318 | INFO     | __main__:calc_sma_gs_indicators:299 - saving avg annual data
 2023-09-12 20:31:06.115 | INFO     | __main__:calc_sma_gs_indicators:318 - indicator calculation
+2023-09-13 10:41:14.093 | INFO     | __main__:calc_sma_gs_indicators:64 - Processing year 2000
+2023-09-13 10:41:14.098 | INFO     | __main__:calc_sma_gs_indicators:81 - loading eu mask
+2023-09-13 10:41:16.496 | INFO     | __main__:calc_sma_gs_indicators:87 - Preparing EOS and SOS
+2023-09-13 10:41:18.795 | INFO     | __main__:calc_sma_gs_indicators:121 - Start SMA processing: clip to growing season and clip to -3,3
+2023-09-13 10:41:20.355 | INFO     | __main__:calc_sma_gs_indicators:200 - Resampling 5km to 1km
+2023-09-13 10:41:39.400 | INFO     | __main__:calc_sma_gs_indicators:250 - saving dekads data
+2023-09-13 10:49:21.915 | ERROR    | __main__:<module>:352 - An error has been caught in function '<module>', process 'MainProcess' (40324), thread 'MainThread' (45008):
+Traceback (most recent call last):
+
+> File "c:\Users\ricci\Projects\ETC-DI-drought\02_processing\CWS_sma_gs_sma_indicators.py", line 352, in <module>
+    calc_sma_gs_indicators(aoi_name=aoi_name, aoi_coords=aoi_bbox, year=year, base_path=base_path)
+    │                               │                    │              │               └ WindowsPath('L:/f02_data/drought_indicator')
+    │                               │                    │              └ 2000
+    │                               │                    └ (2500000, 750000, 7500000, 5500000)
+    │                               └ 'EU'
+    └ <function calc_sma_gs_indicators at 0x000002203841B700>
+
+  File "c:\Users\ricci\Projects\ETC-DI-drought\02_processing\CWS_sma_gs_sma_indicators.py", line 270, in calc_sma_gs_indicators
+    sma_gs_dt.rio.to_raster(os.path.join(yearly_out_path, f'SMA_gs_1km_dekadal_{year}.tif'))
+    │         │             │  │    │    └ 'L:\\f02_data\\drought_indicator\\output\\SMA_gs_1km_EU\\SMA_gs_1km_dekadal'
+    │         │             │  │    └ <function join at 0x000002202E136700>
+    │         │             │  └ <module 'ntpath' from 'C:\\Users\\ricci\\.conda\\envs\\fairicube_env\\lib\\ntpath.py'>
+    │         │             └ <module 'os' from 'C:\\Users\\ricci\\.conda\\envs\\fairicube_env\\lib\\os.py'>
+    │         └ <xarray.core.extensions._CachedAccessor object at 0x0000022035052B20>
+    └ <xarray.Dataset>
+      Dimensions:      (y: 4030, x: 4682)
+      Coordinates:
+        * y            (y) float64 5.416e+06 5.414e+06 ... 1.388e...
+
+  File "C:\Users\ricci\.conda\envs\fairicube_env\lib\site-packages\rioxarray\raster_dataset.py", line 531, in to_raster
+    return data_array.rio.set_spatial_dims(
+           │          └ <xarray.core.extensions._CachedAccessor object at 0x00000220344E4EB0>
+           └ <xarray.DataArray (band_89d42bec-0ca7-42cc-83ce-b1f620ed062a: 36, y: 4030,
+                                x: 4682)>
+             array([[[-999., -999....
+
+  File "C:\Users\ricci\.conda\envs\fairicube_env\lib\site-packages\rioxarray\raster_array.py", line 1148, in to_raster
+    return RasterioWriter(raster_path=raster_path).to_raster(
+           │                          └ 'L:\\f02_data\\drought_indicator\\output\\SMA_gs_1km_EU\\SMA_gs_1km_dekadal\\SMA_gs_1km_dekadal_2000.tif'
+           └ <class 'rioxarray.raster_writer.RasterioWriter'>
+
+  File "C:\Users\ricci\.conda\envs\fairicube_env\lib\site-packages\rioxarray\raster_writer.py", line 275, in to_raster
+    with rasterio.open(self.raster_path, "w", **kwargs) as rds:
+         │        │    │    │                   └ {'driver': 'GTiff', 'height': 4030, 'width': 4682, 'count': 36, 'dtype': 'float32', 'crs': CRS.from_epsg(3035), 'transform': ...
+         │        │    │    └ 'L:\\f02_data\\drought_indicator\\output\\SMA_gs_1km_EU\\SMA_gs_1km_dekadal\\SMA_gs_1km_dekadal_2000.tif'
+         │        │    └ <rioxarray.raster_writer.RasterioWriter object at 0x0000022050A6FC10>
+         │        └ <function open at 0x00000220344E7DC0>
+         └ <module 'rasterio' from 'C:\\Users\\ricci\\.conda\\envs\\fairicube_env\\lib\\site-packages\\rasterio\\__init__.py'>
+
+  File "C:\Users\ricci\.conda\envs\fairicube_env\lib\site-packages\rasterio\env.py", line 444, in wrapper
+    return f(*args, **kwds)
+           │  │       └ {'driver': 'GTiff', 'height': 4030, 'width': 4682, 'count': 36, 'dtype': 'float32', 'crs': CRS.from_epsg(3035), 'transform': ...
+           │  └ ('L:\\f02_data\\drought_indicator\\output\\SMA_gs_1km_EU\\SMA_gs_1km_dekadal\\SMA_gs_1km_dekadal_2000.tif', 'w')
+           └ <function open at 0x00000220344E7D30>
+
+  File "C:\Users\ricci\.conda\envs\fairicube_env\lib\site-packages\rasterio\__init__.py", line 314, in open
+    dataset = writer(
+              └ <class 'rasterio.io.DatasetWriter'>
+
+  File "rasterio\_io.pyx", line 1425, in rasterio._io.DatasetWriterBase.__init__
+  File "rasterio\_io.pyx", line 291, in rasterio._io._delete_dataset_if_exists
+  File "rasterio\_err.pyx", line 195, in rasterio._err.exc_wrap_int
+
+rasterio._err.CPLE_AppDefinedError: Deleting L:/f02_data/drought_indicator/output/SMA_gs_1km_EU/SMA_gs_1km_dekadal/SMA_gs_1km_dekadal_2000.tif failed: Permission denied
+2023-09-13 10:49:22.567 | INFO     | __main__:calc_sma_gs_indicators:64 - Processing year 2022
+2023-09-13 10:49:22.572 | INFO     | __main__:calc_sma_gs_indicators:81 - loading eu mask
+2023-09-13 10:49:25.537 | INFO     | __main__:calc_sma_gs_indicators:87 - Preparing EOS and SOS
+2023-09-13 10:49:27.771 | INFO     | __main__:calc_sma_gs_indicators:121 - Start SMA processing: clip to growing season and clip to -3,3
+2023-09-13 10:49:31.114 | INFO     | __main__:calc_sma_gs_indicators:140 - Resampling 5km to 1km
+2023-09-13 10:50:10.879 | INFO     | __main__:calc_sma_gs_indicators:250 - saving dekads data
+2023-09-13 10:58:39.253 | INFO     | __main__:calc_sma_gs_indicators:275 - saving avg annual data
+2023-09-13 10:59:09.336 | INFO     | __main__:calc_sma_gs_indicators:294 - indicator calculation
+2023-09-13 11:25:37.891 | INFO     | __main__:calc_sma_gs_indicators:64 - Processing year 2000
+2023-09-13 11:25:37.894 | INFO     | __main__:calc_sma_gs_indicators:81 - loading eu mask
+2023-09-13 11:25:40.207 | INFO     | __main__:calc_sma_gs_indicators:87 - Preparing EOS and SOS
+2023-09-13 11:25:42.435 | INFO     | __main__:calc_sma_gs_indicators:121 - Start SMA processing: clip to growing season and clip to -3,3
+2023-09-13 11:25:43.977 | INFO     | __main__:calc_sma_gs_indicators:200 - Resampling 5km to 1km
+2023-09-13 11:26:02.721 | INFO     | __main__:calc_sma_gs_indicators:250 - saving dekads data
+2023-09-13 11:34:22.728 | INFO     | __main__:calc_sma_gs_indicators:275 - saving avg annual data
+2023-09-13 11:34:46.378 | INFO     | __main__:calc_sma_gs_indicators:294 - indicator calculation
